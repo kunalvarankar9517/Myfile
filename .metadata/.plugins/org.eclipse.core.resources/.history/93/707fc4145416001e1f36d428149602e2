@@ -1,0 +1,6 @@
+package com.example.config;
+
+@Controller
+public class JwtAuthenticationBuilder extends OncePerRequestFilter {
+
+}

@@ -1,0 +1,20 @@
+package com.example.service;
+
+public class CustomeServiceDetails implements UserDetailService {
+
+	@Override
+	public  UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException{
+		
+		if(userName.equals("Kunal")) {
+			
+			return new User(username "kunal",password "kunal123",new ArrayLisr<>());
+		}else {
+			
+			throw new UsernameNotFoundException("User not found");
+		}
+		
+		
+		return null;
+	}
+	
+}

@@ -1,0 +1,15 @@
+package com.example.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class JwtController {
+
+	@RequestMapping("/token",method=RequestMethod.POST)
+	
+	public ResponseEntity<?> generateToken(@RequestBody JwtRequest JwtRequest ){
+		
+		System.out.println(jwtRequest);
+		
+	}
+}
